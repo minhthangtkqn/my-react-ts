@@ -1,5 +1,3 @@
-import './style.scss';
-
 const path = require('path');
 
 module.exports = {
