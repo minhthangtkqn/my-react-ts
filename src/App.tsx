@@ -1,28 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './styles/index.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <div className="text-red">HELLO</div>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="grid--container">
+                <div className="item">A</div>
+                <div className="item">B</div>
+                <div className="item">C</div>
+                <div className="item">D</div>
+                <div className="item">E</div>
+                <div className="item">F</div>
+                <div className="item">G</div>
+                <div className="item">H</div>
+                <div className="item">I</div>
+                <div className="item">J</div>
+            </div>
+        </div>
+    );
 }
 
 export default App;

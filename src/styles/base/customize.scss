@@ -1,0 +1,13 @@
+.grid--container {
+    display: grid;
+    width: 1000px;
+    grid-template-rows: 50px 100px;
+    grid-template-columns: 50px 25% 2fr 5fr;
+}
+
+.item {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px 8px;
+    background: #f1afaf;
+}
