@@ -1,0 +1,29 @@
+.grid--container {
+    display: grid;
+    width: 1000px;
+    grid-auto-rows: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 16px;
+}
+
+.item {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px 8px;
+    background: #f1afaf;
+}
+
+.box--1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+
+.box--2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+.box--3 {
+    grid-row: 4 / 6;
+    grid-column: 2 / span 2;
+}
