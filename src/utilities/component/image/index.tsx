@@ -34,7 +34,7 @@ const MyImage: React.FC<Props> = (props) => {
 
     const render = () => {
         return (
-            <img src={imageSrc} width="300" height="300" style={{ background: '#CCC' }} />
+            <img alt="" src={imageSrc} width="300" height="300" style={{ background: '#CCC' }} />
         );
     };
 
