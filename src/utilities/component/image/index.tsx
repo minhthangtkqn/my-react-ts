@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Spin } from 'antd';
-import noImgUrl from 'asset/images/s-placeholder.png';
+// import noImgUrl from 'asset/images/s-placeholder.png';
 
 type Props = {
     src: string
 };
+
+const noImgUrl = 'img/s-placeholder.png';
 
 const MyImage: React.FC<Props> = (props) => {
     const [isLoading, setIsLoading] = useState<boolean>(false);

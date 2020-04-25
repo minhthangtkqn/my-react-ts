@@ -1,5 +1,5 @@
 import React from 'react';
-import MyImage from 'utilities/component/image';
+import MyImage from './index';
 
 export default {
     title: 'Image',
