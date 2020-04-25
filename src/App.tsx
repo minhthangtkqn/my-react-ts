@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import './styles/index.scss';
+// import MyImage from 'utilities/component/image';
 
 function App() {
     return (
         <div className="App">
-            <div className="grid--container">
+            {/* <div className="grid--container">
                 <div className="item box--1">A</div>
                 <div className="item box--2">B</div>
                 <div className="item">C</div>
@@ -21,7 +22,11 @@ function App() {
                 <div className="item">M</div>
                 <div className="item">N</div>
                 <div className="item">oO</div>
-            </div>
+            </div> */}
+
+            {/* <MyImage src="" /> */}
+
+            <code>const myFunction = () => {}</code>
         </div>
     );
 }
