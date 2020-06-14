@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './styles/index.scss';
 // import MyImage from 'utilities/component/image';
 
 function App() {
+    const [isDarkTheme, setDarkTheme] = useState<boolean>(false);
+
     return (
-        <div className="App">
+        <div className={`App ${isDarkTheme ? 'dark' : ''}`}>
             {/* <div className="grid--container">
                 <div className="item box--1">A</div>
                 <div className="item box--2">B</div>
@@ -29,8 +31,19 @@ function App() {
             <code>const myFunction = () => {}</code>
 
             <button className="button">Click Me!</button>
-            
+
             <button className="button-2">Click YOU!</button>
+
+            <br />
+            <br />
+            <div className="box-1">Box 1</div>
+            <br />
+            <br />
+            <div className="box-2">Box 2</div>
+            <br />
+            <br />
+
+            <button onClick={() => setDarkTheme(!isDarkTheme)}>Toggle dark theme</button>
         </div>
     );
 }

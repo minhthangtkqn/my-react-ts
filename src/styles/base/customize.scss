@@ -36,6 +36,9 @@ $accent-color: #5e0000 !default;
 
 $test: red;
 
+$dark-mode-background: #222222;
+$dark-mode-text: #EEEEEE;
+
 @if $dark-theme {
     // this statement just re-assign value to variable
     $primary-color: darken($primary-color, 60%);
@@ -56,4 +59,27 @@ $test: red;
 .button-2 {
     // this button will receive the global value that we assign above
     color: $test;
+}
+
+.App.dark {
+    background-color: $dark-mode-background;
+    color: $dark-mode-text;
+}
+
+@mixin box-style {
+    padding: 5px 10px;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 500;
+    background-color: lightyellow;
+}
+
+.box-1 {
+    @include box-style;
+    color: darkred;
+}
+.box-2 {
+    @include box-style;
+    color: darkgreen;
 }
