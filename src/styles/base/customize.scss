@@ -79,7 +79,44 @@ $dark-mode-text: #EEEEEE;
     @include box-style;
     color: darkred;
 }
+
 .box-2 {
     @include box-style;
     color: darkgreen;
+}
+
+@mixin bordered($color, $width, $radius) {
+    border: $width solid $color;
+    border-radius: $radius;
+}
+
+// pay attention to the @include order 
+.box-3 {
+    @include box-style;
+    @include bordered(#888888, 3px, 7px);
+}
+
+
+@mixin text($style: normal, $color: #222222) {
+    font-style: $style;
+    color: $color;
+}
+
+@mixin twoColorLinearGradient($left, $right) {
+    background-image: linear-gradient(to right, $left, $right);
+}
+
+.box-4 {
+    @include box-style;
+    @include bordered(#888888, 2px, 30px);
+    @include text($color: rgb(240, 248, 133));
+    @include twoColorLinearGradient(#1890ff, #69c0ff);
+
+    padding: 10px 16px;
+    cursor: pointer;
+
+    &:active {
+        @include twoColorLinearGradient(#0076e4, #36abff);
+        // @include bordered(#555555, 2px, 30px);
+    }
 }
