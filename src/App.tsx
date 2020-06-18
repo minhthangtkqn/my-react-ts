@@ -48,6 +48,14 @@ function App() {
             <div className="box-4">Mixin using variable with default value</div>
             <br />
             <br />
+            <button className="button-basic">Basic button</button>
+            <button className="button-danger">Danger button</button>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
             <button onClick={() => setDarkTheme(!isDarkTheme)}>Toggle dark theme</button>
         </div>

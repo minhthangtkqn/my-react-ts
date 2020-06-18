@@ -104,6 +104,9 @@ $dark-mode-text: #EEEEEE;
 
 @mixin twoColorLinearGradient($left, $right) {
     background-image: linear-gradient(to right, $left, $right);
+
+    // mixin can be include in another mixin
+    @include text(italic, #1f1f1f);
 }
 
 .box-4 {
@@ -119,4 +122,18 @@ $dark-mode-text: #EEEEEE;
         @include twoColorLinearGradient(#0076e4, #36abff);
         // @include bordered(#555555, 2px, 30px);
     }
+}
+
+.button-basic {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.button-danger {
+    @extend .button-basic;
+    background-color: red;
 }
