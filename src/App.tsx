@@ -28,7 +28,7 @@ function App() {
 
             {/* <MyImage src="" /> */}
 
-            <code>const myFunction = () => {}</code>
+            <code>const myFunction = () =&gt; {}</code>
 
             <button className="button">Click Me!</button>
 

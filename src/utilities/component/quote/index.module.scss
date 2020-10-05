@@ -1,0 +1,15 @@
+.container {
+    background-color: #F5F5F5;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    width: 450px;
+    min-height: 300px;
+    height: auto;
+    padding: 16px;
+
+    &.fixed-height {
+        height: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
